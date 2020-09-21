@@ -1,0 +1,16 @@
+{
+  "name": "mg-tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "magic-graph": "https://github.com/lk321/magic-graph"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
