@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-    return sequelize.define('user', {
+    const Model = sequelize.define('user', {
         id: {
             type: DataTypes.INTEGER(11),
             allowNull: false,
@@ -25,6 +25,22 @@ module.exports = function (sequelize, DataTypes) {
                 isEmail: true
             }
         },
+        position: {
+            type: DataTypes.STRING(65),
+            allowNull: true
+        },
+        github: {
+            type: DataTypes.STRING(65),
+            allowNull: true
+        },
+        company_id: {
+            type: DataTypes.INTEGER(11),
+            allowNull: true,
+            references: {
+                model: 'company',
+                key: 'id'
+            }
+        },
         password: {
             type: DataTypes.STRING(120),
             allowNull: false,
@@ -39,11 +55,19 @@ module.exports = function (sequelize, DataTypes) {
         tableName: 'user',
         resolvers: {
             query: {
-                // Create customs queries	
+                // Create customs queries
             },
             mutation: {
                 // Create customs mutations	
             }
         }
     })
+
+    Model.associate = function (models) {
+        Model.belongsTo(models.company, {
+            foreignKey: 'company_id'
+        })
+    }
+
+    return Model
 }
