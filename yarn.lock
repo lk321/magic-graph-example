@@ -1484,7 +1484,7 @@ lru-cache@^6.0.0:
 
 "magic-graph@https://github.com/lk321/magic-graph":
   version "0.0.1"
-  resolved "https://github.com/lk321/magic-graph#a1c94a86814c56612ee628d078b70df8c955dd7c"
+  resolved "https://github.com/lk321/magic-graph#6dc9d3147ef41696d935916866166ee88e7750fd"
   dependencies:
     apollo-server-express "^2.17.0"
     dataloader "^2.0.0"
