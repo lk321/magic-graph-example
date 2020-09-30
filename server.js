@@ -2,7 +2,7 @@ const fs = require('fs')
 const http = require('http')	
 const express = require('express')	
 
-const graphqlServer = require('magic-graph')	
+const graphqlServer = require('magic-graphql')	
 
 const configApp = JSON.parse(fs.readFileSync('config.json', 'utf8'))	
 const env = process.env.PRODUCTION ? 'production' : configApp.env	

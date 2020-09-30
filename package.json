@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "magic-graph": "https://github.com/lk321/magic-graph"
+    "magic-graphql": "^0.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
