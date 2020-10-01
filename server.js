@@ -15,6 +15,7 @@ const httpServer = http.createServer(app)
 // ! GraphQL setup	
 graphqlServer(app, {	
     modelDirPath: require('./models'),	
+    customsDirPath: './custom-graphql',
     httpServer: httpServer,	
     subscriptions: true // Enable graphql subscriptions	
 })	
