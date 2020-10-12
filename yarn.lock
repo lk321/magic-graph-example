@@ -1489,10 +1489,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-magic-graphql@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/magic-graphql/-/magic-graphql-0.0.6.tgz#79645192353d1a0f6a8a54ad8c7e22a25ebc0ef4"
-  integrity sha512-Ger2QBpgazO8sVAybhubosJtotXHtsQUnofmC/W4hIUhEEn8HsMukE3Z95D0PdB+dOmnweljU1HqQF6OdrU0/w==
+magic-graphql@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/magic-graphql/-/magic-graphql-0.0.7.tgz#22d5b43b9b7ab3de59b7cde0d4a0c8ac4ab94e35"
+  integrity sha512-KcIAQOOlKkNZxs7MeRYnNT/VhQiju2od0uxGt+PZWlYFufpwyf7eY9gBfJkRK5Ijp6b63mux5SYw7dmPgi/a9w==
   dependencies:
     "@babel/runtime" "^7.6.3"
     apollo-server-express "^2.17.0"
